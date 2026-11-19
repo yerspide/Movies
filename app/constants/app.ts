@@ -1,0 +1,1 @@
+export const DEFAULT_TITLE = "Все о фильмах"
