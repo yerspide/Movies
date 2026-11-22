@@ -1,13 +1,5 @@
 @theme {
-  --color-white: #E90000;
+  --color-white: #ffffff;
   --color-black: #000000;
   --color-current: currentColor;
-
-  --color-gray-90: #797979;
-  --color-gray-100: #848484;
-  --color-gray-300: #232229;
-
-  --color-red-100: #E13C52;
-  --color-red-700: #E90000;
-  --color-cyan-100: #55ACE3;
 }

@@ -50,6 +50,6 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: var(--color-white);
-  background-color: var(--color-grey-10);
+  background-color: var(--color-black);
   font-family: "Barlow", sans-serif;
 }

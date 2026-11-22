@@ -22,8 +22,8 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'icon',
-          type: 'image/png',
-          href: '/icons/logo.png'
+          type: 'image/svg+xml',
+          href: '/icons/logo.svg'
         }
       ]
     }
@@ -47,6 +47,11 @@ export default defineNuxtConfig({
         }
       })
     ]
+  },
+  runtimeConfig: {
+    public: {
+      apiToken: process.env.NUXT_API_TOKEN
+    }
   },
   image: {
     inject: true,
@@ -77,7 +82,10 @@ export default defineNuxtConfig({
       }
     ]
   },
-  css: ['~/assets/css/core.css'],
+  css: [
+    '~/assets/css/core.css',
+    '~/assets/css/animations.css'
+  ],
   modules: ['@pinia/nuxt', '@nuxt/eslint', '@nuxt/icon/module', '@nuxt/image', '@vueuse/nuxt/module'],
   devtools: { enabled: true }
 })

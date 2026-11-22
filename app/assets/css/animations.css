@@ -1,0 +1,85 @@
+.fade-in-up {
+  animation-name: fade-in-up;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-left {
+  animation-name: fade-in-left;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.fade-in-right {
+  animation-name: fade-in-right;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-down {
+  animation-name: fade-in-down;
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.swimming {
+  --swim-duration: 1500ms;
+
+  animation-name: swimming;
+  animation-duration: var(--swim-duration);
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes swimming {
+  from {
+    transform: translateY(-10px)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+}
