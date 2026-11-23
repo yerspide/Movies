@@ -34,5 +34,6 @@
 .tc-main-info {
   background: url(/images/main-background.png) center no-repeat;
   background-size: cover;
+  min-height: 70vh;
 }
 </style>
