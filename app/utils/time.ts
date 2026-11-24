@@ -30,3 +30,11 @@ export function getDurationDatetimeISO(duration: number) {
 
   return `PT${hours}H${minutes}M`
 }
+
+export function getYearsRangeTextWithCurrent(startFrom: number, endFrom: number) {
+  if (startFrom === endFrom) {
+    return String(startFrom)
+  }
+
+  return `${startFrom} - ${endFrom}`
+}

@@ -1,25 +1,7 @@
-import type { MoviesSourceInfo } from '~/types/movie.d'
+export const DEFAULT_TITLE = 'Все о фильмах - новинки из открытых источников'
 
-export const DEFAULT_TITLE = "Все о фильмах"
+export const LOGO_TITLE = 'Все о фильмах'
 
-export const MOVIES_SOURCES: Record<string, MoviesSourceInfo> = {
-  kinopoisk: {
-    id: 0,
-    name: 'Кинопоиск',
-    shortName: 'КП',
-    description: 'Рейтинги, описания, прокат в России',
-    spotClass: 'bg-yellow-400'
-  },
-  TMDb: {
-    id: 1,
-    name: 'TMDb',
-    description: 'Постеры, метаданные и переводы на другие языки, если их нет на Кинопоиске',
-    spotClass: 'bg-red-700'
-  },
-  IMDb: {
-    id: 2,
-    name: 'IMDb',
-    description: 'Актёрский состав и рейтинг',
-    spotClass: 'bg-green-600'
-  }
-}
+export const DEVELOPMENT_START_FROM_YEAR = 2026
+
+export const WATCH_DEBOUNCE_CALLBACK_DEFAULT = 100
